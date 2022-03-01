@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.app {
+  margin: 50px;
+  border: 1px solid #e4e4e4;
+  min-height: 100px;
+}
+
+.wrap {
+  width: 500px;
+}
+
+.select {
+  position: relative;
+  font-size: 22px;
+}
+.select.open .select__dropdown {
+  display: block;
+}
+.select.open .select__input {
+  border-bottom: none;
+}
+.select__input {
+  border: 1px solid grey;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  height: 46px;
+  cursor: pointer;
+}
+.select__dropdown {
+  position: absolute;
+  display: none;
+  border: 1px solid grey;
+  border-radius: 5px;
+  top: 46px;
+  left: 0;
+  right: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+.select__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.select__item {
+  border-bottom: 1px solid lightgrey;
+  padding: 10px 20px;
+  background: #f8f8f8;
+}
+.select__item.selected {
+  background: #f35a5a;
+}
+.select__item.selected:hover {
+  background: #ff7575;
+}
+.select__item:hover {
+  background: #eeeeee;
+  cursor: pointer;
+  transition: background-color 0.15 ease-in;
+}
+
+/*# sourceMappingURL=/pl_select.e31bb0bc.css.map */
